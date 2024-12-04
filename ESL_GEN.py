@@ -213,6 +213,9 @@ def add_audio_to_presentation(prs, audio_path):
 def main():
     st.title("ESL sound-alike exercise creator")
 
+    st.write("This tool allows you to create a powerpoint presentation to test student's ability to distinguish between similar sounding/looking english words")
+    st.write("Each slide consists of a picture of the word the students are to identify, along with two decoy words that sound similar (IE: Electricity, Elasticity, Electrician")
+    st.write("Select the number of slides you want, then type a word in for each slide and wait 2-3 minutes for it to generate")
     number_of_slides = int(st.number_input("Number of slides", min_value=1, max_value=10, value=2, step=1))
 
     target_words = []
